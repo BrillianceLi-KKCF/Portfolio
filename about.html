@@ -11,33 +11,36 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
     <style>
-      html, body {
-    height: 100%; /* ensures both html and body take full height */
+      html{
+    height: 200%; /* ensures both html and body take full height */
     margin: 0;
     padding: 0;
 }
 
         body {
-          display: flex;
-    justify-content: center;
-    align-items: center;
-          
-      
-         
-        background-size: cover;/* Makes it cover the whole screen */
+            
+            background-image: url('https://media.istockphoto.com/id/2149019833/vector/retro-seamless-pattern-with-wavy-vertical-pink-lines-1960s-1970s-funky-design.jpg?s=612x612&w=0&k=20&c=m2N5frKur5nlXMLaM3hXyqkNB7hxrQ2Z-0zfWzASpJE=');
+            background-size: cover;      /* Makes it cover the whole screen */
         background-position: center; /* Centers the image */
         background-repeat: no-repeat;/* Prevents tiling */
-  
-
-            background-color: white;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             margin: 0;
             padding: 0;
           
           
         }
+      .notes {
         
-  
+        padding: 20px;
+        border: 2px solid black;
+        margin: 20px;
+        
+        display: inline-block;
+        
+        
+         
+      }
+        
         
         .container {
             width: 90%;
@@ -48,10 +51,15 @@
         
    
       .drop-down {
+    
+      display: flex;
       position: relative;
-      top: -100px;
+      margin-top: 80px;
+      
+      
+      top: -200px;
       opacity: 0;
-      transition: all 1s ease;
+      transition: all 2s ease;
       }
         
         .drop-down.active {
@@ -59,8 +67,24 @@
           opacity: 1;
          
         }
-        
-        
+      
+     
+      
+      
+
+    .grid button:hover {
+      background-color: deepskyblue;
+    }
+
+    .grid button:active {
+      background-color: dodgerblue;
+    }
+      
+    .play hover {
+        backgronud-color: deepskyblue;
+    }
+     
+     
         
     </style>
     
@@ -77,21 +101,33 @@
         
     </header>
 <div class="drop-down" id="drop">
-<h1>testing</h1>
+  <div class="notes">
+<h3>Introducing PUZZLEDRUS!, a video game entertainment company with a mission to produce exciting puzzle-like video games meant for all ages!</h3>
     </div>
   
+  </div>
+  
+
+  
+  <div class="game-container">
+    <h1>Tic-Tac-Toe Demo </h1>
+  <div class="grid" id="grid"></div>
+  <div class="play" id="play">
+  </div>
+    <div id="selector"> 
+    </div>
+</div>
+  
+  
 
   
   
-  <script>
-    window.addEventListener("load", function () {
-      document.getElementById("drop").classList.add("active");
-    });
-  </script>
-
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   
     
 </body>
 </html>
+
+  
