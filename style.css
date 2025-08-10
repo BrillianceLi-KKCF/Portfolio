@@ -57,3 +57,81 @@ header {
 .bordered-image {
   border: 5px solid black;
 }
+
+img {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+ 
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers grid & button horizontally */
+  margin-top: 100px;
+}
+
+.grid {
+  display: grid;
+  
+  
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 3px;
+}
+
+.grid button {
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: lightgreen;
+}
+
+
+.play {
+  margin-top: 15px;
+}
+
+.play button {
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.selector {
+  margin-top: 15px;
+  
+}
+.selector button{
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 20px;
+  gap: 3px;
+  
+}
+#xButton:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+#oButton:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+#selector {
+  display: flex;
+  gap: 10px; /* Adds space between children */
+}
