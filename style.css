@@ -58,12 +58,23 @@ header {
   border: 5px solid black;
 }
 
-img {
+.img-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
- 
+  flex-direction: row; /* row is default */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
 }
+
+.img-container img {
+  margin-top: 15%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
 .game-container {
   display: flex;
   flex-direction: column;
