@@ -99,50 +99,5 @@ header {
   cursor: pointer;
 }
 
-.selected {
-  background-color: lightgreen;
-}
 
 
-.play {
-  margin-top: 15px;
-}
-
-.play button {
-  background-color: lightblue;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 5px 20px;
-}
-
-.selector {
-  margin-top: 15px;
-  
-}
-.selector button{
-  background-color: lightblue;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 5px 20px;
-  gap: 3px;
-  
-}
-#xButton:hover {
-  background-color: red;
-  color: white;
-  cursor: pointer;
-}
-
-#oButton:hover {
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-}
-#selector {
-  display: flex;
-  gap: 10px; /* Adds space between children */
-}
