@@ -1,7 +1,8 @@
 window.addEventListener("load", function () {
   document.getElementById("drop").classList.add("active");
+  
+  document.getElementById("drop2").classList.add("active");
 });
-
 const buttons = document.querySelectorAll(".gridBtn");
 
 const play = document.getElementById("play");
