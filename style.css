@@ -32,7 +32,6 @@ header {
 
 .nav-link {
     color: white;
-    text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     transition: color 0.3s;
@@ -60,9 +59,9 @@ header {
 
 .img-container {
   display: flex;
-  flex-direction: row; /* row is default */
-  align-items: center; /* vertical center */
-  justify-content: center; /* horizontal center */
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .img-container img {
@@ -75,29 +74,17 @@ header {
 
 
 
-.game-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centers grid & button horizontally */
-  margin-top: 100px;
-}
 
-.grid {
-  display: grid;
-  
-  
-  grid-template-columns: repeat(3, 60px);
-  grid-template-rows: repeat(3, 60px);
-  gap: 3px;
-}
 
-.grid button {
+.grid-container button {
   background-color: lightblue;
   border: 2px solid black;
+  height: 70px;
+  width: 70px;
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+  
 }
-
 
 
