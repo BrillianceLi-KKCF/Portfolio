@@ -11,15 +11,15 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
     <style>
-      html, body{
-    height: 100%; /* ensures both html and body take full height */
+      html{
+    height: 200%; /* ensures both html and body take full height */
     margin: 0;
     padding: 0;
 }
 
         body {
           display: flex;
-    justify-content: center;
+    justify-content: row;
     align-items: center;
           
         background-image: url('https://media.istockphoto.com/id/2149019833/vector/retro-seamless-pattern-with-wavy-vertical-pink-lines-1960s-1970s-funky-design.jpg?s=612x612&w=0&k=20&c=m2N5frKur5nlXMLaM3hXyqkNB7hxrQ2Z-0zfWzASpJE=');
@@ -38,13 +38,10 @@
       .notes {
      
         width : 50vw;
-        height : 70vh;
+        height : 50vh;
         border: 2px solid #333;
         border-radius: 8px;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
-        
-        
-        
         
       }
       
@@ -52,9 +49,15 @@
       
         
         .container {
+            display: grid;
+            justify-content: row;
+           
+            
             width: 90%;
             margin: 0 auto;
             padding: 10px;
+            gap: 20px;
+            margin-top: 60px;
             
         }
         
@@ -95,17 +98,85 @@
 
   
   
-  
-    <div style = "background-color: rgba(255,255,255, 0.45)" class = "notes" >
+  <div class="container drop-down" id="drop">
+    <div style = "background-color: rgba(16, 230, 52, 0.35)" class= "notes" >
       <h1>My Bio: </h1>
       
-      <h2 style: "padding-top: 10px"> Hi, I’m Brilliance Li, a soon to be college undergraduate at Binghamton University. I’m majoring in business and computer science and spend my free time making games. I’m knowledgeable in C++, Java, Python, and design platforms such as Figma, Canva, and Google slides.</h2>
+      <h3 style: "padding-top: 10px"> Hi, I’m blah blah, a soon to be college undergraduate at Binghamton University. I’m majoring in business and computer science and spend my free time making games. I’m knowledgeable in C++, Java, Python, and design platforms such as Figma, Canva, and Google slides.</h3>
+    </div>
       
-  </div> 
+      <div style = "background-color: rgba(80, 16, 230, 0.35)" class = "notes" > 
+        <h1> Career Goals<h1>
+          <h3>
+          <li style="margin-left: 10px;">Specialize in developing educational games 
+          </li>
+            
+          <li style="margin-left: 10px;">Develop understanding of basic web development skills
+          </li>
+          <li style="margin-left: 10px;">Learn how to apply my skillset towards future projects
+          </li>
+            
+          <li style="margin-left: 10px">Form connections with well established figures in the tech industry
+          </li>
+
+            </h3>
+      </div>
+          
+      <div style = "background-color: rgba(230, 137, 16, 0.35)" class = "notes" > 
+        <h1> Aspirations: <h1>
+          <h3>
+            
+            <li style="margin-left: 10px">
+              Combine education with games to promote a better learning experience
+            </li>
+            <li style="margin-left: 10px">
+              Learn additional skills that could benefit me in other tech related fields
+            </li>
+            
+            
+            
+            
+          </h3>
+          
+      </div>
+          
+      
+          
+      
+ </div>
+        
+    <div class="container drop-down" id="drop2">
+      <div style = "background-color: rgba(16, 230, 201, 0.35)" class = "notes">
+        <h1> Experience </h1>
+        <h3>
+          <li style="margin-left: 10px;">
+          Tutored in High School (2023-2024) as part of the peer-tutoring program where we help fellow students and peers with homework and classwork. 
+          </li>
+          <li style="margin-left: 10px;">
+             Worked as a cashier at a local Bubble Tea Shop (2020-2023) where I developed valuable customer service skills
+           
+        </h3>
+      </div>
+      
+      <div style = "background-color: rgba(230, 16, 30, 0.35)" class = "notes">
+        <h1> Programs </h1>
+        
+        <h3>
+          Currently a fellow at the Karim Kharbouch Coding Fellowship (TKH), where I'm exploring  coding, design, and other tech opportunities!
+          
+          
+        </h3>
+        </div>
+      
+   </div>
+      
+      
+      
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     
 </body>
 </html>
- 
+
