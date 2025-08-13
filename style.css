@@ -59,4 +59,15 @@ body {
          
 }
 
+.grid-container button {
+  background-color: lightblue;
+  border: 2px solid black;
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+
 
