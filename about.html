@@ -51,13 +51,37 @@
  
 
       }
+        video {
+
+            width: 300px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            border-radius: 10px;
+            border: 10px solid black;
+        }
+        video:hover {
+
+            transform: scale(1.05);
+            filter: grayscale(30%);
+        }
+            
+
+            
+        
         
         
         .container {
+            display: flex;
+            justify-content: center;
             width: 90%;
             margin: 0 auto;
             padding: 10px;
             
+        }
+
+        .video-container {
+            display: flex;
+            gap: 40px;
+            justify-content: row;
         }
         
    
@@ -147,11 +171,14 @@
     <header>
         
     </header>
-<div class="drop-down" id="drop">
-  <div class="notes">
-<h3>PUZZLESRUS</h3>
+
+<div class="container">
+    <div class="drop-down" id="drop">
+          <div class="notes">
+              <h3>PUZZLESRUS</h3>
+          </div>
     </div>
- </div>
+</div>
   
   <div class="grid-container">
     
@@ -183,26 +210,30 @@
     
    </div>
   
+<div class="video-container">
+    <video controls>
+        <source src="8QueensPuzzle.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="Maze-Demo1.mp4" type="video/mp4">
+    </video>
 
-<video width="300" controls>
-<source src="8QueensPuzzle.mp4" type="video/mp4">
-</video>
-<video width="300" controls>
-<source src="Maze-Demo1.mp4" type="video/mp4">
-</video>
+    <video controls>
+        <source src="Maze-Demo2.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="Maze-Demo3.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="ShootingStars.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="GameOfLife.mp4" type="video/mp4">
+    </video>
 
-<video width="300" controls>
-<source src="Maze-Demo2.mp4" type="video/mp4">
-</video>
-<video width="300" controls>
-<source src="Maze-Demo3.mp4" type="video/mp4">
-</video>
-<video width="300" controls>
-<source src="ShootingStars.mp4" type="video/mp4">
-</video>
-<video width="300" controls>
-<source src="GameOfLife.mp4" type="video/mp4">
-</video>
+</div>
+
+    
   
   
  
