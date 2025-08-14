@@ -75,7 +75,23 @@ header {
 }
 
 
-
+.drop-down {
+    
+      display: flex;
+      position: relative;
+      margin-top: 80px;
+      
+      
+      top: -200px;
+      opacity: 0;
+      transition: all 1.2s ease;
+      }
+        
+.drop-down.active {
+    top: 0;
+    opacity: 1;
+         
+}
 
 
 
